@@ -1,0 +1,29 @@
+{
+  "name": "health-monitor",
+  "version": "1.0.0",
+  "description": "Monitor server health",
+  "main": "src/main.js",
+  "dependencies": {
+    "diskusage": "^1.1.3",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christoph-jeanluc-schneider/health-monitor.git"
+  },
+  "keywords": [
+    "server",
+    "health",
+    "status",
+    "monitor"
+  ],
+  "author": "Christoph Jean-Luc Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christoph-jeanluc-schneider/health-monitor/issues"
+  },
+  "homepage": "https://github.com/christoph-jeanluc-schneider/health-monitor#readme"
+}
