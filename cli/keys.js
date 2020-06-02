@@ -7,10 +7,8 @@ const keys_filename = path.join( __dirname, "../keys.json" );
 try {
     var keys = require( "../keys.json" );
 } catch( error ) {
-    var keys = {
-        port: 7171
-    };
-    fs.writeFile( keys_filename, JSON.stringify( keys, null, 4 ), function () {
+    var keys = {};
+    fs.writeFile( keys_filename, "{}", function () {
         console.log( "created key file" );
     } );
 }

@@ -7,10 +7,8 @@ const watched_files_filename = path.join( __dirname, "../watched-files.json" );
 try {
     var watched_files = require( "../watched-files.json" );
 } catch( error ) {
-    var watched_files = {
-        port: 7171
-    };
-    fs.writeFile( watched_files_filename, JSON.stringify( watched_files, null, 4 ), function () {
+    var watched_files = {};
+    fs.writeFile( watched_files_filename, "{}", function () {
         console.log( "created watched-files file" );
     } );
 }
